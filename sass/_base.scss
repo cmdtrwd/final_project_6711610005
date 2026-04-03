@@ -1,0 +1,45 @@
+@use "variables";
+@use "mixins";
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: variables.$font-body;
+  color: variables.$text-white;
+  background-color: variables.$bg-dark;
+  line-height: 1.6;
+}
+
+a {
+  color: variables.$text-white;
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  background: none;
+  color: variables.$text-white;
+  font-family: variables.$font-body;
+}
+
+h1, h2, h3 {
+  font-family: variables.$font-main;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.container {
+  @include mixins.container;
+}

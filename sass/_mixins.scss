@@ -1,0 +1,14 @@
+@use "variables";
+@use "function";
+
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin container {
+  max-width: variables.$container;
+  margin: 40px auto;
+  padding: 0 function.spacing(2);
+}
